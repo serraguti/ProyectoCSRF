@@ -1,0 +1,16 @@
+﻿@model string[]
+
+<h1>Sus compras realizadas</h1> 
+
+<h2 style="color:red">
+    Dirección de envio: @ViewBag.Direccion
+</h2>
+
+<ul class="list-group">
+    @foreach (string prod in Model)
+    {
+        <li class="list-group-item">
+            @prod
+        </li>
+    }
+</ul>
