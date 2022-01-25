@@ -28,6 +28,7 @@ namespace ProyectoCSRF
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(15);
             });
+            services.AddAntiforgery();
             services.AddControllersWithViews();
         }
 
